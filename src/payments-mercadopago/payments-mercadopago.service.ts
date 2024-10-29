@@ -5,7 +5,7 @@ import { envs } from 'src/config';
 @Injectable()
 export class PaymentsMercadopagoService {
   private readonly mercadoPagoClient = new MercadoPagoConfig({
-    accessToken: envs.mpAccessToken,
+    accessToken: '123',
   });
 
   async createPaymentSession(email: string, cardToken: string) {
